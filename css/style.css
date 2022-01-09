@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+#screen {
+    height: 600px;
+    width: 400px;
+    border-radius: 30px;
+    background: #fff;
+    border: 15px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+#header {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: rgb(212, 108, 39);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#messageDisplay {
+    height: 450px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    padding: 0 20px;
+    overflow-y: auto;
+}
+.chat {
+    min-height: 40px;
+    max-width: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.botMessage {
+    background: rgb(233 232 223);
+    color: #000;
+}
+#messageContainer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.userMessage {
+    background: #8d67ff;
+    margin-right: 20px;
+}
+#userInput {
+    height: 50px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: 1%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    
+}
+#message {
+    height: 50px;
+    width: 90%;
+    position: absolute;
+    left: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0px 15px;
+    font-size: 17px;
+}
+
+#send {
+    height: 50px;
+    width: 24%;
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+    display: grid;
+    place-items: center;
+    color: rgb(114, 17, 17);
+    font-size: 20px;
+    background: rgb(11, 89, 235);
+    cursor: pointer;
+}
